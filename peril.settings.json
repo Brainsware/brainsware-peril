@@ -1,0 +1,8 @@
+{
+  "settings": {
+  },
+  "rules": {
+    "pull_request": "brainsware/brainsware-peril@org/all-prs.ts",
+    "pull_request.closed": "brainsware/brainsware-peril@org/closed-prs.ts"
+  }
+}
