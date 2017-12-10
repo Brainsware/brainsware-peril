@@ -8,7 +8,7 @@ const rfc: any = runRFC
 
 export const rfc5 = rfc("No PR is too small to warrant a paragraph or two of summary", () => {
   const pr = danger.github.pr
-  if (pr.body.length === 0) {
+  if (pr.body === null || pr.body.length === 0) {
     fail("Please add a description to your PR.")
   }
 })
